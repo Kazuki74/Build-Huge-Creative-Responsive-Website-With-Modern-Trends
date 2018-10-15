@@ -10,7 +10,18 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery/dist/jquery.min
+//= require bootstrap/dist/js/bootstrap.min
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+/* ======================== Preloader section ==========================*/
+
+$(window).on('load', () => {
+	$('#status').fadeOut();
+	$('#preloader').delay(400).fadeOut();
+});
+
+/* ======================== Preloader section ==========================*/
