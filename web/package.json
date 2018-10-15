@@ -1,5 +1,9 @@
 {
   "name": "web",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.4.1",
+    "bootstrap": "3",
+    "jquery": "^3.3.1"
+  }
 }
