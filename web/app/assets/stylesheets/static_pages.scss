@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import "bootstrap/dist/css/bootstrap.min";
-@import "@fortawesome/fontawesome-free/css/fontawesome.min";
+@import "font-awesome/scss/font-awesome.scss";
 
 /* ======================== Default section ==========================*/
 
@@ -66,6 +66,12 @@ html body {
 		bottom: 0;
 		right: 0;
 		z-index: 1;
+	}
+
+	#home-content {
+		position: absolute;
+		top: 0;
+		right: 50%;
 	}
 }
 
