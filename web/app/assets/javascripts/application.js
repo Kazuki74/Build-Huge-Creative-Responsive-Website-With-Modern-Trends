@@ -12,6 +12,7 @@
 //
 //= require jquery/dist/jquery.min
 //= require bootstrap/dist/js/bootstrap.min
+//= require owl.carousel2/dist/owl.carousel.min
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
@@ -25,3 +26,18 @@ $(window).on('load', () => {
 });
 
 /* ======================== Preloader section ==========================*/
+
+/* ======================== Team section ==========================*/
+
+$(document).ready(() => {
+	$("#team-members").owlCarousel({
+		items: 2,
+		autoplay: true,
+		smartSpeed: 700,
+		loop: true,
+		autoplayHoverPause: true
+	});
+});
+
+/* ======================== Team section ==========================*/
+
