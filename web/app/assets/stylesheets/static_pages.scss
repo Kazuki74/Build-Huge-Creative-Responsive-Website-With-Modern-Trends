@@ -5,13 +5,50 @@
 @import "bootstrap/dist/css/bootstrap.min";
 @import "font-awesome/scss/font-awesome.scss";
 
-/* ======================== Default section ==========================*/
+/* ======================== Genaral section ==========================*/
 
 html body {
 	width: 100%;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+	color: #212226
+}
+
+p {
+	font-size: 13px;
+	line-height: 24px;
+}
+
+section {
+	background-color: #fff;
 }
 
 /* ======================== Default section ==========================*/
+
+/* ======================== Button section ==========================*/
+
+.btn-general {
+	border-radius: 28px;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin: 0 6px;
+	padding: 12px 46px;
+	transition: all .5s;
+}
+
+.btn-home {
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.btn-home:hover, .btn-home:focus {
+	color: #fff;
+	background-color: #f4c613;
+	border: 1px solid #f4c613;
+}
+/* ======================== Button section ==========================*/
 
 /* ======================== Preloader section ==========================*/
 
@@ -19,11 +56,10 @@ html body {
 	height: 100vh;
 	width: 100%;
 	background-color: #fff;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	z-index: 9999;
 	#status {
 		background-image: url(/Facebook-1s-200px.gif);
@@ -43,6 +79,7 @@ html body {
 
 /* ======================== Home section ==========================*/
 #home {
+	background: none;
 	.home-bg-video {
 		height: auto;
 		width: auto;
@@ -70,11 +107,48 @@ html body {
 
 	#home-content {
 		position: absolute;
-		top: 0;
-		right: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		#home-content-inner {
+			#home-heading {
+				h1 {
+					font-size: 65px;
+					color: #fff;
+					text-transform: uppercase;
+					display: inline-block;
+					margin: 0;
+					font-weight: 100;
+					span {
+						color: #f4c613;
+						margin-left: 10px;
+					}
+				}
+			}
+			#home-text p {
+				color: #fff;
+				font-size: 17px;
+				margin: 8px 0 30px 0;
+			}
+		}
+	}
+
+	#arrow-down {
+		position: absolute;
+		z-index: 2;
+		color: #fff;
+		font-size: 35px;
+		bottom: 20px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		&:hover, &:focus {
+			color: #f4c613;
+			cursor: pointer;
+		}
 	}
 }
-
-
-
 /* ======================== Home section ==========================*/
+
+
+
