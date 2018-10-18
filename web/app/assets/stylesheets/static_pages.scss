@@ -29,8 +29,12 @@ section {
 
 /* ======================== Content Box ==========================*/
 
-.content-box-lg {
+.content-box-lg  {
 	padding: 120px 0;
+}
+
+.content-box-md {
+	padding: 100px 0;
 }
 
 /* ======================== Content Box ==========================*/
@@ -158,7 +162,7 @@ section {
 }
 /* ======================== Home section ==========================*/
 
-/* ======================== About section ==========================*/
+/* ======================== About01 section ==========================*/
 
 .content-box-lg {
 	padding: 120px 0;
@@ -196,7 +200,53 @@ section {
 	}
 }
 
-/* ======================== About section ==========================*/
+/* ======================== About01 section ==========================*/
+
+/* ======================== About02 section ==========================*/
+
+#about-02 {
+	background-color: #f4f4f4;
+	.about-item {
+		background-color: #fff;
+		padding: 80px 30px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, .9);
+		i {
+			font-size: 42px;
+		}
+		h3 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		hr {
+			width: 45px;
+			height: 3px;
+			background-color: #f4c613;
+			margin: 0 auto;
+			border: none;
+		}
+		p {
+			margin-top: 20px;
+		}
+		&:hover {
+			background-color: #f4c613;
+			transition: all 400ms ease-in-out;
+			i, h3, p {
+				color: #fff;
+			}
+			i, hr {
+				transition: all 400ms ease-in-out;
+			}
+			i {
+				transform: translateY(-20px);
+			}
+			hr {
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+/* ======================== About02 section ==========================*/
 
 
 
